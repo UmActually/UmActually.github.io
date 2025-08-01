@@ -16,16 +16,21 @@ const projects: Project[] = allProjects.filter((p) => !p.job);
 <Page title="Leonardo Corona-Garza">
 	<NameHeader />
 
-	<p class="container">
-		CS senior student at <span class="bold"><img src="../images/tec-black.png" alt="tec de monterrey logo" style="translate: 0 2px;"> Tec de Monterrey</span>, graduating in Dec 2025.<br><br>
+	<h2 class="container">About Me</h2>
+
+	<p class="container margin-top">
+		CS senior student at <span class="bold"><img src="../images/tec-black.png" alt="tec de monterrey logo" style="translate: 0 2px;"> Tec de Monterrey</span>, graduating in December 2025.<br><br>
 		My major interest is mobile development, in particular for <span class="bold"><img src="../images/apple-black.svg" alt="apple logo" style="translate: 0 1px;"> Apple platforms</span>.
-		Confident with the Swift language and front-end development in SwiftUI. Currently learning to take full advantage of frameworks like CoreAnimation, UIKit & Combine.<br><br>
-		Experience in web technologies like <span class="bold"><img src="../images/python-black.png" alt="python logo" style="translate: 0 2px;"> Django</span> by building production REST services, and NextJS & Angular, for front-end.<br><br>
+		Confident with the <span class="bold">Swift language</span> and front-end development in SwiftUI. Currently learning to take full advantage of frameworks like CoreAnimation, UIKit & Combine.
+		Experience in web technologies like <span class="bold"><img src="../images/python-black.png" alt="python logo" style="translate: 0 2px;"> Django</span> by building production REST services, and <span class="bold">Next.js</span>, <span class="bold">Angular</span> and <span class="bold">vanilla JS</span>, for front-end.<br><br>
 		Solid understanding of topics like software requirements & life cycles, cybersecurity, networks, and operating systems.
 		Self-taught background in music, design and audiovisual editing as well.
 	</p>
 
-	<h2 class="container margin-top">Experience</h2>
+	<div class="container margin-top">
+		<h2>Work Experience</h2>
+		<p class="small-margin-top monaspace">Click on an item for details, or <a href="/projects" class="local-link">see all projects ›</a></p>
+	</div>
 
 	{jobProjects.map((project) => (
 		<JobProjectCard project={project} />
@@ -33,10 +38,19 @@ const projects: Project[] = allProjects.filter((p) => !p.job);
 
 	<div class="container margin-top">
 		<h2>Projects</h2>
-		<a href="/projects" class="local-link" style="margin-top: 0.5rem">See my projects in detail ›</a>
+		<p class="small-margin-top monaspace">Click on an item for details, or <a href="/projects" class="local-link">see all projects ›</a></p>
 	</div>
 
 	{projects.map((project) => (
 		<ProjectCard project={project} />
 	))}
 </Page>
+
+<style>
+	.monaspace {
+		font-family: monaspace-neon, sans-serif;
+	}
+	.small-margin-top {
+		margin-top: 0.5rem !important;
+	}
+</style>

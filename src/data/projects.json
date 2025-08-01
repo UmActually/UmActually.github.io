@@ -26,7 +26,7 @@
       "Function Points (Cost Analysis)",
       "SRS Documents"
     ],
-    "iconURL": null
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/akto-profile-pic.jpg"
   },
   {
     "id": "aguamty",
@@ -100,7 +100,7 @@
       "The biggest challenge has been the **computer (bot player) algorithm**, that takes decisions based on many metrics, like the possibility to block opponents from playing.",
       "The main distinctive factor of our game, compared to other web domino games, is **mobile support** (still in progress), and that players can **place dominoes in any direction** they want."
     ],
-    "role": "While my dad worked mostly on HTML, I implemented much of the front and back end logic on TypeScript. I also designed the logo of the game. Lately, I've been working on mobile support, and Python deployment scripts. In the future, the game will be rewritten in Vue.",
+    "role": "While my dad worked mostly on HTML, I implemented much of the front and back end **logic on TypeScript**. I also designed the logo of the game. Lately, I've been working on mobile support, and Python deployment scripts. In the future, the game will be rewritten in Vue.",
     "technologies": [
       "Vanilla JS API",
       "Vite",
@@ -108,8 +108,165 @@
       "Python"
     ],
     "skills": [
-      "Logo Design"
+      "Data Modeling",
+      "Graphic Design"
     ],
     "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/dominoesmx.png"
+  },
+  {
+    "id": "hearmeout",
+    "name": "Hear Me Out! - Party Game",
+    "tldr": "Apple TV & iOS Party Game",
+    "job": null,
+    "date": "May 2025 - Present",
+    "shortDescription": "The most ridiculous **debate game** you’ll ever play. Designed to play in the living room with friends, with their **Apple TV** and **iPhone** devices.",
+    "detailedDescription": "The most ridiculous **debate game** you’ll ever play. Hear Me Out! is a multiplayer party game for Apple platforms, designed to play the living room, with the **Apple TV** and every player’s **iPhone** devices connecting automatically.",
+    "bulletPoints": [
+      "Game where players argue about the most absurd topics, like whether or not **100 random dudes could take down one gorilla**.",
+      "For 3-6 players, with devices connected via the **native MultipeerConnectivity** framework.",
+      "Different pairs of players debate every round. Debaters use their iPhone to **cast their arguments to the TV** like a slideshow. Audience uses their iPhone devices to **react** with sounds & stickers, and **vote** at the end."
+    ],
+    "role": "I am one of the three developers of the project. When starting the project, I was mostly focused on managing the overall architecture, programming the **connectivity functionality** and linking it with the SwiftUI **view models** of the app. Then I designed some **UI components** for both AppleTV and iPhone.",
+    "technologies": [
+      "Apple TV",
+      "SwiftUI",
+      "MultipeerConnectivity"
+    ],
+    "skills": [
+      "Public Presentation",
+      "UX Testing",
+      "Advanced SwiftUI Animations"
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/appIcon-1.png"
+  },
+  {
+    "id": "devotion",
+    "name": "DEVOTION",
+    "tldr": "Project Management Web App",
+    "job": null,
+    "date": "March 2024 - July 2024",
+    "shortDescription": "Google-integrated project management app using **Angular** & **Django**, designed for engineering student organizations with diverse departments, projects and member roles.",
+    "detailedDescription": "DEVOTION (a play on Azure DevOps + Notion) is an application for painless project management, built with **Angular** & **Django**, capable of tracking **nested projects & tasks**, members and metrics. DEVOTION is aimed at elevating the ease of collaboration of student organizations at Tec de Monterrey, known for having diverse departments, projects and member roles.",
+    "bulletPoints": [
+      "Uses **Google authentication**, and integrates with the user's **Google calendar**.",
+      "Developed with the help of Tec de Monterrey professors and **Perficient (software company)**, initially aimed at tracking the construction of a Formula SAE car. We extended the concept to work with **just about any project**.",
+      "Built with **Angular** for the front end, and **Django REST Framework** for the back end, with PostgreSQL as the database."
+    ],
+    "role": "My main position in this project was **back end developer**, since I am very familiar with REST API design and Django REST framework. However, I also designed all of the icons and visual animations of the app using **Affinity Designer** and **DaVinci Resolve**, and some front end components like the calendar views.",
+    "technologies": [
+      "Angular",
+      "Django REST Framework",
+      "Google APIs",
+      "Heroku",
+      "Vercel",
+      "PostgreSQL"
+    ],
+    "skills": [
+      "Agile Development",
+      "Web Design",
+      "API Design",
+      "API Documentation",
+      "Data Modeling",
+      "Graphic Design"
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/Devotion-Logo.png"
+  },
+  {
+    "id": "aqualia",
+    "name": "Aqualia - Check Your Water",
+    "tldr": "App For Apple Platforms",
+    "job": null,
+    "date": "November 2024 - Present",
+    "shortDescription": "An app for **insight of the water quality** of your neighborhood and city. Designed to explain the most important water metrics in a simple way, with relevant precautions and suggestions.",
+    "detailedDescription": null,
+    "bulletPoints": [
+      "**Interactive map** - users can tap on delimited zones in the city and navigate to the respective quality information.",
+      "**Elegant presentation** - information for every parameter is displayed with charts that show their recommended ranges, and accompanied by dialogs with suggestions and links to more information.",
+      "**Public drinking water** - the map can also show the location of public fountains in the city. Tapping on a fountain opens Apple Maps with walking directions."
+    ],
+    "role": "For now, I am the **sole developer** of this project. The app currently displays hard-coded data for the city of Naples from an official source. We are looking to expand to the rest of Italy and creating a back-end that interfaces with resources from companies.",
+    "technologies": [
+      "SwiftUI",
+      "UIKit",
+      "MapKit",
+      "Swift Charts"
+    ],
+    "skills": [
+      "Mobile Design"
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/Aqualia-1024.png"
+  },
+  {
+    "id": "cybersecuritytec",
+    "name": "Cybersecurity TEC",
+    "tldr": "Role In Student Organization",
+    "job": null,
+    "date": "January 2023 - December 2023",
+    "shortDescription": "Cybersecurity TEC is an official cybersecurity **student organization** of Tec de Monterrey. I was **Director of the Marketing department** throughout 2023.",
+    "detailedDescription": null,
+    "bulletPoints": [
+      "Led **visual rebranding** efforts, resulting in improved brand recognition and **doubling of social media followers** throughout 2023.",
+      "Designed many of the promotional material for the events, conferences and CTFs of the group. Created content using **DaVinci Resolve**, **Pixelmator Pro**, and **Affinity Designer**.",
+      "My main marketing campaign was for the 2023 edition of our annual **cybersecurity congress**, where we displayed video promotional material around the Tec **campus’ electronic banners** & screens."
+    ],
+    "role": "I was Director of the Marketing department throughout 2023, stepped down as Coordinator the next year.",
+    "technologies": [
+      "DaVinci Resolve",
+      "Pixelmator Pro",
+      "Affinity Designer"
+    ],
+    "skills": [
+      "Graphic Design",
+      "Video Editing",
+      "Public Speaking",
+      "Branding Documentation"
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/Font.png"
+  },
+  {
+    "id": "spotifyatlas",
+    "name": "spotifyatlas",
+    "tldr": "PyPI Library For Spotify's API",
+    "job": null,
+    "date": "December 2022",
+    "shortDescription": "Developed and published a **Python PYPI package** for seamless interaction with **Spotify’s web API**, simplifying data retrieval and programmatic interaction with music.",
+    "detailedDescription": null,
+    "bulletPoints": [
+      "spotifyatlas incorporates tools to programmatically access Spotify features like **search queries**, or automate user tasks like **modifying your playlists**. All in a clean, object-oriented style."
+    ],
+    "role": "Created the project and maintained by adding features of Spotify's API over time. Implemented documentation for methods in code, as well as a complete README for the repository.",
+    "technologies": [
+      "Python",
+      "PyPI"
+    ],
+    "skills": [
+      "Auto Unit Testing",
+      "Library Development",
+      "Library Documentation"
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/download.png"
+  },
+  {
+    "id": "portfolio",
+    "name": "This Page",
+    "tldr": "Personal Portfolio Page",
+    "job": null,
+    "date": "Present",
+    "shortDescription": "Personal portfolio page built with **TypeScript** and **Astro**, showcasing my projects, skills, and experience.",
+    "detailedDescription": null,
+    "bulletPoints": [
+      "**Astro** - This is a static site (just HTML), but built with components.",
+      "**GitHub Pages** - The site is hosted on GitHub Pages, and the source code is available on my GitHub profile."
+    ],
+    "role": "I am the sole developer of this project.",
+    "technologies": [
+      "Astro",
+      "TypeScript",
+      "GitHub Pages"
+    ],
+    "skills": [
+      "Web Design"
+    ],
+    "iconURL": null
   }
 ]
