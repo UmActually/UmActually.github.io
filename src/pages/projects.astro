@@ -1,0 +1,21 @@
+---
+import '../styles/global.css';
+
+import Page from "../layouts/Page.astro";
+import ProjectDetails from "../components/ProjectDetails.astro";
+
+import projects from '../data/projects.json';
+import type { Project } from "../data/types";
+---
+
+<Page title="Projects - Leonardo Corona-Garza">
+    <div class="flex-centered margin-top">
+        <h1>Projects</h1>
+        <h2><a href="/" class="local-link">‹ Leonardo Corona-Garza</a></h2>
+    </div>
+    <ProjectDetails project={projects[0]} />
+    {projects.slice(1).map((project: Project) => (
+        <hr>
+        <ProjectDetails project={project} />
+    ))}
+</Page>

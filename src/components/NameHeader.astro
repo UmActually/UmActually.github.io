@@ -1,0 +1,82 @@
+<div class="flex-centered" style="margin: 5rem 0;">
+    <h1 id="my-name">Leonardo Corona-Garza</h1>
+    <div id="bio-grid">
+        <h2>B.S. in Computer Science</h2><h2 class="accent-blue">@ Tec de Monterrey</h2>
+        <h2>Learner</h2><h2 class="accent-orange">@ Apple Developer Academy</h2>
+    </div>
+</div>
+
+<style>
+    h1 {
+        font-variation-settings: "wght" 100, "wdth" 100;
+        animation: font-stretch 2s ease-out forwards;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    #bio-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    #bio-grid h2:nth-child(odd) {
+        font-variation-settings: "wght" 400;
+        text-align: right;
+    }
+
+    #bio-grid h2:nth-child(even) {
+        text-align: left;
+    }
+
+    @keyframes font-stretch {
+        from {
+            font-variation-settings: "wght" 100, "wdth" 110;
+        }
+        to {
+            font-variation-settings: "wght" 800, "wdth" 125;
+        }
+    }
+</style>
+
+<script>
+    const nameElement = document.getElementById("my-name") as HTMLElement;
+    let name = nameElement.innerText;
+    if (document.body.clientWidth < 600) {
+        name = name.replace(" ", "\n");
+    }
+    const chars = "ABCDEGHILMNOPRSTUXYZabcdeghilmnoprstuxyz------------";
+    let unveilAmount = 0;
+    let currentNameText = Array(name.length)
+        .fill("")
+        .map(() => chars[Math.floor(Math.random() * chars.length)])
+        .join("");
+
+    nameElement.innerText = currentNameText;
+
+    const nameUnveil = setInterval(() => {
+        let text = "";
+        let wrongCharacters = 0;
+        for (let index = 0; index < name.length; index++) {
+            if ([" ", "\n"].includes(name[index]) || Math.random() < unveilAmount) {
+                text += name[index];
+            } else if (currentNameText[index] !== name[index]) {
+                text += chars[Math.floor(Math.random() * chars.length)];
+                wrongCharacters++;
+            } else {
+                text += currentNameText[index];
+            }
+        }
+        if (wrongCharacters) {
+            currentNameText = text;
+            nameElement.innerText = currentNameText;
+        }
+        unveilAmount += 0.008;
+        if (unveilAmount >= 1 || wrongCharacters <= 1) {
+            clearInterval(nameUnveil);
+            nameElement.innerText = name;
+        }
+    }, 40);
+</script>

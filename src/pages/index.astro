@@ -1,0 +1,42 @@
+---
+import '../styles/global.css';
+
+import Page from '../layouts/Page.astro';
+import NameHeader from "../components/NameHeader.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import JobProjectCard from "../components/JobProjectCard.astro";
+
+import allProjects from '../data/projects.json';
+import type { Project } from "../data/types";
+
+const jobProjects: Project[] = allProjects.filter((p) => p.job);
+const projects: Project[] = allProjects.filter((p) => !p.job);
+---
+
+<Page title="Leonardo Corona-Garza">
+	<NameHeader />
+
+	<p class="container">
+		CS senior student at <span class="bold"><img src="../images/tec-black.png" alt="tec de monterrey logo" style="translate: 0 2px;"> Tec de Monterrey</span>, graduating in Dec 2025.<br><br>
+		My major interest is mobile development, in particular for <span class="bold"><img src="../images/apple-black.svg" alt="apple logo" style="translate: 0 1px;"> Apple platforms</span>.
+		Confident with the Swift language and front-end development in SwiftUI. Currently learning to take full advantage of frameworks like CoreAnimation, UIKit & Combine.<br><br>
+		Experience in web technologies like <span class="bold"><img src="../images/python-black.png" alt="python logo" style="translate: 0 2px;"> Django</span> by building production REST services, and NextJS & Angular, for front-end.<br><br>
+		Solid understanding of topics like software requirements & life cycles, cybersecurity, networks, and operating systems.
+		Self-taught background in music, design and audiovisual editing as well.
+	</p>
+
+	<h2 class="container margin-top">Experience</h2>
+
+	{jobProjects.map((project) => (
+		<JobProjectCard project={project} />
+	))}
+
+	<div class="container margin-top">
+		<h2>Projects</h2>
+		<a href="/projects" class="local-link" style="margin-top: 0.5rem">See my projects in detail ›</a>
+	</div>
+
+	{projects.map((project) => (
+		<ProjectCard project={project} />
+	))}
+</Page>

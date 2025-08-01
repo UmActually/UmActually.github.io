@@ -1,0 +1,6 @@
+---
+const raw = await Astro.slots.render("default") || "";
+const html = raw.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+---
+
+<p set:html={html}></p>

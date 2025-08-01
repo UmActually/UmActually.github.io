@@ -1,0 +1,56 @@
+---
+import "../styles/global.css";
+import "../styles/projects.css";
+import RichParagraph from "./RichParagraph.astro";
+import type { Project } from "../data/types";
+
+const project: Project = Astro.props.project;
+if (!project) {
+    throw new Error("Project is required.");
+}
+
+const iconURL = project.iconURL || "/images/android-chrome-192x192.png";
+---
+
+<div
+    class="container bordered project-grid-1 clickable margin-top"
+    onclick={`window.location.href = '/projects#${project.id}'`}
+>
+    <img src={iconURL} alt={`${project.id} icon`} width="160" height="160">
+    <div>
+        <div class="resume-grid">
+            <div>
+                <h3>{project.name}</h3>
+            </div>
+            <div>
+                <p>{project.date}</p>
+            </div>
+        </div>
+        <br>
+        <RichParagraph>{project.shortDescription}</RichParagraph>
+        {(project.technologies.length > 0 || project.skills.length > 0) && (
+            <ul class="skills-list">
+                {project.technologies.map((tech) => (
+                        <li class="tech">{tech}</li>
+                ))}
+                {project.skills.map((skill) => (
+                        <li>{skill}</li>
+                ))}
+            </ul>
+        )}
+    </div>
+</div>
+
+<style>
+    .project-grid-1 {
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        gap: 2rem;
+    }
+
+    .project-grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 160px;
+        gap: 2rem;
+    }
+</style>

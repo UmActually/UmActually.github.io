@@ -1,0 +1,89 @@
+[
+  {
+    "id": "akto",
+    "name": "AKTO",
+    "tldr": "Full-Stack Web Freelance",
+    "job": {
+      "position": "Software Engineer (Freelance project)",
+      "company": "Innovaction Gym, Tec de Monterrey",
+      "city": "Monterrey, Mexico"
+    },
+    "date": "January 2024 - June 2024",
+    "shortDescription": "Led a software development team of three, building a web application for a **COIL platform** connecting **10+ universities**.",
+    "detailedDescription": null,
+    "bulletPoints": [
+      "**Business & DevOps** - Conducting function point analysis, creating SRS documents, and implementing agile project management methodologies.",
+      "**T3 Stack** - Developing a full-stack application using Next.js and tRPC in TypeScript, hosted on Vercel.",
+      "**Supabase** - Designing and implementing data models and object storage using Supabase and PostgreSQL."
+    ],
+    "role": "All three of us were in charge of specific tasks of both front and back end development. I was the **leader of the team**: managed requirements with the client, and time and cost analysis with function points. I also set and configured part of the hosting environment and repositories.",
+    "technologies": [
+      "T3 Stack",
+      "Next.js",
+      "Supabase"
+    ],
+    "skills": [
+      "Function Points (Cost Analysis)",
+      "SRS Documents"
+    ],
+    "iconURL": null
+  },
+  {
+    "id": "aguamty",
+    "name": "Agua MTY",
+    "tldr": "Back-End Web Freelance",
+    "job": {
+      "position": "Back End Developer (Freelance project)",
+      "company": "RT Conducción Integral",
+      "city": "Monterrey, Mexico"
+    },
+    "date": "April 2023 - August 2023",
+    "shortDescription": "Built the back end of an **IoT application** for Nuevo León’s **water service company**, resulting in improved efficiency of water delivery for small businesses, and data analytics for administrators.",
+    "detailedDescription": null,
+    "bulletPoints": [
+      "**Django Stack** - Utilized Django REST Framework in Python, Docker, PostgreSQL, and JWT authentication.",
+      "**REST Development** - Built & documented the API schema, conducted end-to-end tests with automated scripts.",
+      "**PEP8** - Ensured code quality by adhering to PEP8 standards."
+    ],
+    "role": "I was one of the four **back-end developers** of the project. My job was to design and build the REST API, given a prototype of the app. While my colleagues worked on IoT features, I implemented most of the endpoints, and wrote the documentation for the front end team. I also built for end-to-end testing within the Django project.",
+    "technologies": [
+      "Django REST Framework",
+      "JWT Auth",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "skills": [
+      "API Design",
+      "API Documentation",
+      "Auto E2E Testing"
+    ],
+    "iconURL": null
+  },
+  {
+    "id": "semitones",
+    "name": "Semitones - Chromatic Tuner",
+    "tldr": "App For Apple Platforms",
+    "job": null,
+    "date": "November 2024",
+    "shortDescription": "**Swift Student Challenge 2025 winner** app for tuning instruments and voice, available on the app store!",
+    "detailedDescription": "Semitones is a minimalistic voice and **instrument tuning app** for iOS and iPadOS, aimed at providing precise information of detected pitches within the frequency spectrum, by naturally laying out notes in a staff and a rotating chromatic compass, helping music learners in the process.\n\nThis was my app for the individual challenge at the Academy and also my **winning submission** for the Swift Student Challenge.",
+    "bulletPoints": [
+      "Uses more than SwiftUI to ensure a smooth experience. I utilized the **CoreAnimation** framework with UIKit to create the shapes and behavior of the tuning disk.",
+      "For pitch detection, I used functions from **Accelerate** to provide fast computations on arrays, since I wanted a constant analysis of sound.",
+      "The biggest challenge was the pitch detection algorithm.",
+      "Leveraged haptics to make the app more **accessible** for VoiceOver users."
+    ],
+    "role": "Since this was an individual project, I assumed both developer and designer roles.",
+    "technologies": [
+      "SwiftUI",
+      "UIKit",
+      "CoreAnimation",
+      "Accelerate"
+    ],
+    "skills": [
+        "Mobile Design",
+        "Pitch Detection"
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/semitones-small.png"
+  }
+]

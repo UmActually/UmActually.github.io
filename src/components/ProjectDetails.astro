@@ -1,0 +1,55 @@
+---
+import "../styles/global.css";
+import "../styles/projects.css";
+import RichParagraph from "./RichParagraph.astro";
+import type { Project } from "../data/types";
+
+const project: Project = Astro.props.project;
+if (!project) {
+    throw new Error("Project data is required");
+}
+---
+
+<div id={project.id} class="container">
+    <h2 class="title-margin">{project.name} - {project.tldr}</h2>
+    <RichParagraph>{project.detailedDescription || project.shortDescription}</RichParagraph>
+    {project.bulletPoints.length > 0 && (
+        <ul>
+            {project.bulletPoints.map((bulletPoint) => (
+                <li><RichParagraph>{bulletPoint}</RichParagraph></li>
+            ))}
+        </ul>
+    )}
+    <h3 class="title-margin">My Role & Responsibilities</h3>
+    <RichParagraph>{project.role}</RichParagraph>
+    <div class="skills-grid margin-vertical">
+        <div>
+            {project.technologies.length > 0 && (
+                <h3>Technologies</h3>
+                <ul class="skills-list">
+                    {project.technologies.map((technology) => (
+                        <li class="tech">{technology}</li>
+                    ))}
+                </ul>
+            )}
+        </div>
+        <div>
+            {project.skills.length > 0 && (
+                <h3>Skills</h3>
+                <ul class="skills-list">
+                    {project.skills.map((skill) => (
+                            <li>{skill}</li>
+                    ))}
+                </ul>
+            )}
+        </div>
+    </div>
+</div>
+
+<style>
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+</style>

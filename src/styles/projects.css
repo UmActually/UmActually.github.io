@@ -1,0 +1,58 @@
+.clickable {
+    transition:
+            border-bottom-color 0.2s ease-in-out,
+            border-left-color 0.2s ease-in-out,
+            border-right-color 0.2s ease-in-out,
+            border-top-color 0.2s ease-in-out,
+            transform 0.2s ease-in-out
+}
+
+.clickable:hover {
+    transform: scale(1.01);
+    padding: calc(2rem - 1px);
+    border-color: var(--accent-orange);
+    border-width: 2px;
+    cursor: pointer;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.resume-grid div {
+    gap: 1rem;
+}
+
+.resume-grid div:nth-child(odd) {
+    text-align: left;
+}
+
+.resume-grid div:nth-child(even) {
+    text-align: right;
+}
+
+.resume-grid p {
+    font-family: monaspace-neon, sans-serif;
+}
+
+ul.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+ul.skills-list li {
+    font-family: monaspace-neon, sans-serif;
+    margin-bottom: 0;
+    color: var(--bg-white);
+    padding: 0.25rem 0.5rem;
+    background-color: var(--accent-orange);
+}
+
+ul.skills-list li.tech {
+    background-color: var(--accent-blue);
+}

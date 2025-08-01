@@ -1,0 +1,151 @@
+@font-face {
+    font-family: monaspace-neon;
+    src: url('/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2') format('woff2'),
+    url('/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff') format('woff');
+    font-weight: 200 800;
+    font-stretch: 100% 125%;
+}
+
+:root {
+    --link: #007FEE;
+    --border: #a89f94;
+    --bg-white: #F8F3ED;
+    --accent-blue: #3C4FCE;
+    --accent-orange: #F06449;
+    --accent-green: #4D9480;
+}
+
+body {
+    padding: 0 1rem;
+    font-family: monaspace-neon, sans-serif;
+    background-color: var(--bg-white);
+}
+
+main,
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0;
+    font-size: larger;
+}
+
+h3 {
+    margin: 0;
+    font-size: large;
+}
+
+.title-margin {
+    margin: 2rem 0 1rem 0;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.05em;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--link);
+}
+
+li {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.05em;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+}
+
+.accent-blue {
+    color: var(--accent-blue);
+}
+
+.accent-orange {
+    color: var(--accent-orange);
+}
+
+.container {
+    padding: 0 2rem;
+}
+
+.margin-top {
+    margin: 2rem 0 0 0;
+}
+
+.margin-vertical {
+    margin: 2rem 0;
+}
+
+.bordered {
+    border: 1px solid var(--border);
+}
+
+.strong-bordered {
+    border: 2px solid var(--accent-orange);
+}
+
+.container.bordered {
+    padding: 2rem;
+}
+
+.container.strong-bordered {
+    padding: calc(2rem - 1px);
+}
+
+p img {
+    height: 1em;
+}
+
+p strong {
+    color: var(--accent-orange);
+    font-variation-settings: "wght" 600;
+}
+
+li strong {
+    font-variation-settings: "wght" 600;
+}
+
+.bold {
+    font-variation-settings: "wght" 600;
+}
+
+.light {
+    font-variation-settings: "wght" 200;
+}
+
+.local-link {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    border-bottom: solid 1px var(--border);
+    transition: border-bottom-color, border-bottom-width 0.2s ease;
+}
+
+.local-link:hover {
+    border-bottom: solid 2px var(--accent-orange);
+}
+
+.flex-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
