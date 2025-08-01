@@ -23,10 +23,10 @@ if (!project || !project.job) {
             <p>{project.date}</p>
             <p class="light">{project.job.city}</p>
         </div>
-    </div><br>
-
+    </div>
+    <br>
     <RichParagraph>{project.shortDescription}</RichParagraph>
-
+    <br>
     {(project.technologies.length > 0 || project.skills.length > 0) && (
         <ul class="skills-list">
             {project.technologies.map((tech) => (

@@ -36,17 +36,30 @@
     font-family: monaspace-neon, sans-serif;
 }
 
+@media (max-width: 600px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .resume-grid div {
+        text-align: center !important;
+    }
+}
+
 ul.skills-list {
     list-style: none;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.75rem;
     margin-bottom: 0;
 }
 
 ul.skills-list li {
     font-family: monaspace-neon, sans-serif;
+    font-size: small;
     margin-bottom: 0;
     color: var(--bg-white);
     padding: 0.25rem 0.5rem;

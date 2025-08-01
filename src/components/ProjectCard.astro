@@ -28,6 +28,7 @@ const iconURL = project.iconURL || "/images/android-chrome-192x192.png";
         </div>
         <br>
         <RichParagraph>{project.shortDescription}</RichParagraph>
+        <br>
         {(project.technologies.length > 0 || project.skills.length > 0) && (
             <ul class="skills-list">
                 {project.technologies.map((tech) => (
@@ -52,5 +53,19 @@ const iconURL = project.iconURL || "/images/android-chrome-192x192.png";
         display: grid;
         grid-template-columns: 1fr 160px;
         gap: 2rem;
+    }
+
+    @media (max-width: 600px) {
+        .project-grid-1, .project-grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        .project-grid-1 img {
+            justify-self: center;
+        }
+
+        .project-grid-2 img {
+            justify-self: center;
+        }
     }
 </style>

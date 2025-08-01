@@ -9,7 +9,10 @@
 :root {
     --link: #007FEE;
     --border: #a89f94;
-    --bg-white: #F8F3ED;
+    --bg-white: #efebea;
+    --fg-primary: #000000;
+    --fg-secondary: #605a56;
+    --fg-secondary-strong: #3c3a38;
     --accent-blue: #3C4FCE;
     --accent-orange: #F06449;
     --accent-green: #4D9480;
@@ -19,6 +22,12 @@ body {
     padding: 0 1rem;
     font-family: monaspace-neon, sans-serif;
     background-color: var(--bg-white);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 0.25rem;
+    }
 }
 
 main,
@@ -73,6 +82,23 @@ hr {
     border-top: 1px solid var(--border);
 }
 
+.bold {
+    font-variation-settings: "wght" 600;
+}
+
+.light {
+    font-variation-settings: "wght" 200;
+}
+
+.secondary {
+    /*font-size: 0.85rem;*/
+    color: var(--fg-secondary);
+}
+
+.secondary strong {
+    color: var(--fg-secondary-strong);
+}
+
 .accent-blue {
     color: var(--accent-blue);
 }
@@ -87,6 +113,10 @@ hr {
 
 .margin-top {
     margin: 2rem 0 0 0;
+}
+
+.margin-bottom {
+    margin: 0 0 2rem 0;
 }
 
 .margin-vertical {
@@ -118,16 +148,13 @@ p strong {
     font-variation-settings: "wght" 600;
 }
 
+ul.bordered {
+    list-style: url('data:image/svg+xml;utf8,<svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><polygon points="2,0 8,6 2,12" fill="%23A89F94"/></svg>');
+    padding: 1rem;
+}
+
 li strong {
     font-variation-settings: "wght" 600;
-}
-
-.bold {
-    font-variation-settings: "wght" 600;
-}
-
-.light {
-    font-variation-settings: "wght" 200;
 }
 
 .local-link {

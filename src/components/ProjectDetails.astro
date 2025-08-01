@@ -11,10 +11,17 @@ if (!project) {
 ---
 
 <div id={project.id} class="container">
-    <h2 class="title-margin">{project.name} - {project.tldr}</h2>
+    <div class="header-grid margin-vertical">
+        <img src={project.iconURL || "/images/android-chrome-192x192.png"} alt={`${project.id} icon`} width="80" height="80">
+        <div>
+            <h2>{project.name}</h2>
+            <p class="monaspace">{project.tldr}</p>
+            <p class="monaspace light" style="margin-top: 0.5rem;">{project.date}</p>
+        </div>
+    </div>
     <RichParagraph>{project.detailedDescription || project.shortDescription}</RichParagraph>
     {project.bulletPoints.length > 0 && (
-        <ul>
+        <ul class="secondary bordered">
             {project.bulletPoints.map((bulletPoint) => (
                 <li><RichParagraph>{bulletPoint}</RichParagraph></li>
             ))}
@@ -22,10 +29,10 @@ if (!project) {
     )}
     <h3 class="title-margin">My Role & Responsibilities</h3>
     <RichParagraph>{project.role}</RichParagraph>
-    <div class="skills-grid margin-vertical">
+    <div class="skills-grid margin-bottom">
         <div>
             {project.technologies.length > 0 && (
-                <h3>Technologies</h3>
+                <h3 class="title-margin">Technologies</h3>
                 <ul class="skills-list">
                     {project.technologies.map((technology) => (
                         <li class="tech">{technology}</li>
@@ -35,7 +42,7 @@ if (!project) {
         </div>
         <div>
             {project.skills.length > 0 && (
-                <h3>Skills</h3>
+                <h3 class="title-margin">Skills</h3>
                 <ul class="skills-list">
                     {project.skills.map((skill) => (
                             <li>{skill}</li>
@@ -47,6 +54,16 @@ if (!project) {
 </div>
 
 <style>
+    .monaspace {
+        font-family: monaspace-neon, sans-serif;
+    }
+
+    .header-grid {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        gap: 2rem;
+    }
+
     .skills-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;

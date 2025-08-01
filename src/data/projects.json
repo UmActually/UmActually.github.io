@@ -85,5 +85,31 @@
         "Pitch Detection"
     ],
     "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/semitones-small.png"
+  },
+  {
+    "id": "dominoes",
+    "name": "dominoes.mx",
+    "tldr": "Online Multiplayer Web Game",
+    "job": null,
+    "date": "June 2024 - Present",
+    "shortDescription": "**Online domino game** using TypeScript & WebSocket as a personal project with my dad.",
+    "detailedDescription": null,
+    "bulletPoints": [
+      "Our approach for this game was to use practically no web frameworks, just the **Vite** tool for bundling, and **Node.js** for the WebSocket server.",
+      "Play the block variant of dominoes with **1-4 players** online. Share a game link with friends or join a public game.",
+      "The biggest challenge has been the **computer (bot player) algorithm**, that takes decisions based on many metrics, like the possibility to block opponents from playing.",
+      "The main distinctive factor of our game, compared to other web domino games, is **mobile support** (still in progress), and that players can **place dominoes in any direction** they want."
+    ],
+    "role": "While my dad worked mostly on HTML, I implemented much of the front and back end logic on TypeScript. I also designed the logo of the game. Lately, I've been working on mobile support, and Python deployment scripts. In the future, the game will be rewritten in Vue.",
+    "technologies": [
+      "Vanilla JS API",
+      "Vite",
+      "Node.js",
+      "Python"
+    ],
+    "skills": [
+      "Logo Design"
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/dominoesmx.png"
   }
 ]
