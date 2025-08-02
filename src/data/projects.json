@@ -26,7 +26,9 @@
       "Function Points (Cost Analysis)",
       "SRS Documents"
     ],
-    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/akto-profile-pic.jpg"
+    "links": [],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/akto-profile-pic.jpg",
+    "gallery": []
   },
   {
     "id": "aguamty",
@@ -57,7 +59,9 @@
       "API Documentation",
       "Auto E2E Testing"
     ],
-    "iconURL": null
+    "links": [],
+    "iconURL": null,
+    "gallery": []
   },
   {
     "id": "semitones",
@@ -84,7 +88,19 @@
         "Mobile Design",
         "Pitch Detection"
     ],
-    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/semitones-small.png"
+    "links": [
+      {
+        "label": "Download on the App Store",
+        "url": "https://apps.apple.com/us/app/semitones-chromatic-tuner/id6740186119"
+      }
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/semitones-small.png",
+    "gallery": [
+      "2025/05/1-2.png",
+      "2025/05/2-1.png",
+      "2025/05/3-1.png",
+      "2025/05/4-1.png"
+    ]
   },
   {
     "id": "dominoes",
@@ -111,7 +127,18 @@
       "Data Modeling",
       "Graphic Design"
     ],
-    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/dominoesmx.png"
+    "links": [
+      {
+        "label": "Play Online",
+        "url": "https://dominoes.mx"
+      }
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/dominoesmx.png",
+    "gallery": [
+      "2025/05/settings.png",
+      "2025/05/chat.png",
+      "2025/05/dominoes.png"
+    ]
   },
   {
     "id": "hearmeout",
@@ -137,7 +164,18 @@
       "UX Testing",
       "Advanced SwiftUI Animations"
     ],
-    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/appIcon-1.png"
+    "links": [
+      {
+        "label": "iOS App",
+        "url": "https://apps.apple.com/us/app/hear-me-out-party-game/id6746806268"
+      },
+      {
+        "label": "tvOS App",
+        "url": "https://apps.apple.com/us/app/hear-me-out-tv-party-game/id6746806904"
+      }
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/appIcon-1.png",
+    "gallery": []
   },
   {
     "id": "devotion",
@@ -169,7 +207,17 @@
       "Data Modeling",
       "Graphic Design"
     ],
-    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/Devotion-Logo.png"
+    "links": [],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/Devotion-Logo.png",
+    "gallery": [
+      "2025/05/1.png",
+      "2025/05/2.png",
+      "2025/05/3.png",
+      "2025/05/4.png",
+      "2025/05/5.png",
+      "2025/05/6.png",
+      "2025/05/devotion-presentation.png"
+    ]
   },
   {
     "id": "aqualia",
@@ -194,7 +242,14 @@
     "skills": [
       "Mobile Design"
     ],
-    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/Aqualia-1024.png"
+    "links": [
+      {
+        "label": "Try on TestFlight",
+        "url": "https://testflight.apple.com/join/vu7DFMzB"
+      }
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/Aqualia-1024.png",
+    "gallery": []
   },
   {
     "id": "cybersecuritytec",
@@ -221,7 +276,14 @@
       "Public Speaking",
       "Branding Documentation"
     ],
-    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/Font.png"
+    "links": [],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/Font.png",
+    "gallery": [
+      "2025/05/posts.png",
+      "2025/05/1680650955810.jpg",
+      "2025/05/1694315563781.jpg",
+      "2025/05/1694315712837.jpg"
+    ]
   },
   {
     "id": "spotifyatlas",
@@ -244,7 +306,18 @@
       "Library Development",
       "Library Documentation"
     ],
-    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/download.png"
+    "links": [
+      {
+        "label": "PyPI Release",
+        "url": "https://pypi.org/project/spotifyatlas/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/UmActually/spotifyatlas"
+      }
+    ],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/download.png",
+    "gallery": []
   },
   {
     "id": "portfolio",
@@ -267,6 +340,21 @@
     "skills": [
       "Web Design"
     ],
-    "iconURL": null
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/UmActually/UmActually.github.io"
+      },
+      {
+        "label": "Back to Home",
+        "url": "/"
+      },
+      {
+        "label": "Back to Top",
+        "url": "/projects#"
+      }
+    ],
+    "iconURL": null,
+    "gallery": []
   }
 ]

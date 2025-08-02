@@ -1,0 +1,79 @@
+---
+import "../styles/global.css";
+
+const fileNames: string[] = Astro.props.fileNames;
+if (!fileNames) {
+    throw new Error("File names for project images are required");
+}
+
+const thumbnailURLs = fileNames.map((fileName) => `https://i0.wp.com/developeracademy-itservices.com/wp-content/uploads/${fileName}?resize=160%2C160&ssl=1`);
+---
+
+<div class="project-gallery margin-bottom">
+    {thumbnailURLs.map((url) => (
+        <img src={url} alt="project thumbnail" width="160" height="160" loading="lazy" class="thumbnail" />
+    ))}
+</div>
+
+<style>
+    .project-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .thumbnail {
+        border: 1px solid var(--border);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .thumbnail:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+        .project-gallery {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+
+        .thumbnail:hover {
+            transform: none;
+            box-shadow: none;
+        }
+    }
+</style>
+
+<script>
+    const expandedImageContainer = document.getElementById("expanded-image-container");
+
+    function expandImage(url: string) {
+        url = url.replace(/resize=\d+%2C\d+&/, "");
+        const img = document.createElement("img");
+        img.src = url;
+        img.alt = "expanded project image";
+        img.style.maxWidth = "90%";
+        img.style.maxHeight = "90%";
+
+        if (!expandedImageContainer) {
+            return;
+        }
+
+        expandedImageContainer.innerHTML = "";
+        expandedImageContainer.appendChild(img);
+
+        expandedImageContainer.style.display = "flex"; // Show the container
+        expandedImageContainer.addEventListener("click", () => {
+            expandedImageContainer.style.display = "none";
+        });
+    }
+
+    const galleryImages = document.querySelectorAll('.project-gallery > img');
+    if (galleryImages.length > 0) {
+        galleryImages.forEach((img) => {
+            img.addEventListener("click", () => expandImage((img as HTMLImageElement).src));
+        });
+    }
+</script>

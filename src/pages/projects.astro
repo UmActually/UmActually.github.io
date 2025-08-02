@@ -3,6 +3,7 @@ import '../styles/global.css';
 
 import Page from "../layouts/Page.astro";
 import ProjectDetails from "../components/ProjectDetails.astro";
+import GalleryExpandedImage from "../components/GalleryExpandedImage.astro";
 
 import projects from '../data/projects.json';
 import type { Project } from "../data/types";
@@ -18,4 +19,5 @@ import type { Project } from "../data/types";
         <hr>
         <ProjectDetails project={project} />
     ))}
+    <GalleryExpandedImage />
 </Page>

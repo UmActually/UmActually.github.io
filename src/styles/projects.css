@@ -1,10 +1,10 @@
 .clickable {
     transition:
-            border-bottom-color 0.2s ease-in-out,
-            border-left-color 0.2s ease-in-out,
-            border-right-color 0.2s ease-in-out,
-            border-top-color 0.2s ease-in-out,
-            transform 0.2s ease-in-out
+        border-bottom-color 0.2s ease-in-out,
+        border-left-color 0.2s ease-in-out,
+        border-right-color 0.2s ease-in-out,
+        border-top-color 0.2s ease-in-out,
+        transform 0.2s ease-in-out
 }
 
 .clickable:hover {
