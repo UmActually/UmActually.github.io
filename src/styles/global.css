@@ -90,6 +90,10 @@ hr {
     font-variation-settings: "wght" 200;
 }
 
+.monaspace {
+    font-family: monaspace-neon, sans-serif;
+}
+
 .secondary {
     /*font-size: 0.85rem;*/
     color: var(--fg-secondary);
@@ -121,6 +125,10 @@ hr {
 
 .margin-vertical {
     margin: 2rem 0;
+}
+
+.small-margin-top {
+    margin-top: 0.5rem !important;
 }
 
 .bordered {

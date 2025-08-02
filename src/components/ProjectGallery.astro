@@ -50,16 +50,16 @@ const thumbnailURLs = fileNames.map((fileName) => `https://i0.wp.com/developerac
     const expandedImageContainer = document.getElementById("expanded-image-container");
 
     function expandImage(url: string) {
+        if (!expandedImageContainer) {
+            return;
+        }
+
         url = url.replace(/resize=\d+%2C\d+&/, "");
         const img = document.createElement("img");
         img.src = url;
         img.alt = "expanded project image";
         img.style.maxWidth = "90%";
         img.style.maxHeight = "90%";
-
-        if (!expandedImageContainer) {
-            return;
-        }
 
         expandedImageContainer.innerHTML = "";
         expandedImageContainer.appendChild(img);

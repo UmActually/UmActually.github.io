@@ -65,7 +65,10 @@ if (!project) {
         </div>
     </div>
     {project.gallery.length > 0 && (
-        <h3 class="title-margin">Gallery</h3>
+        <div class="title-margin">
+            <h3>Gallery</h3>
+            <p class="small-margin-top monaspace">Click on an image to expand.</p>
+        </div>
         <ProjectGallery fileNames={project.gallery} />
     )}
 </div>
