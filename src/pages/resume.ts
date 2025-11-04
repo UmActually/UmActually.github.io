@@ -4,7 +4,7 @@ export const GET: APIRoute = () => {
     return new Response(null, {
         status: 301,
         headers: {
-            Location: '/files/leonardo-cv.pdf'
+            Location: '/files/leonardo-resume.pdf'
         }
     });
 };

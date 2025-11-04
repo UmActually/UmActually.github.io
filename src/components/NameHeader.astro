@@ -1,19 +1,37 @@
+---
+import ExternalLink from "./ExternalLink.astro";
+---
+
 <div class="flex-centered" style="margin: 5rem 0;">
     <h1 id="my-name">Leonardo Corona-Garza</h1>
     <div id="bio-grid">
-        <h2>B.S. in Computer Science</h2><h2 class="accent-blue">@ Tec de Monterrey</h2>
-        <h2>Learner</h2><h2 class="accent-orange">@ Apple Developer Academy</h2>
+        <h2>B.S. in Computer Engineering</h2><h2 class="accent-blue">@ Tec de Monterrey</h2>
+        <h2>Graduate</h2><h2 class="accent-orange">@ Apple Developer Academy</h2>
+    </div>
+    <div id="bio-external-links" style="margin-top: 2rem;">
+        <a href="/resume" class="local-link">Resume</a>
+        <ExternalLink href="https://www.linkedin.com/in/leonardo-corona-garza-8b4847269/">LinkedIn</ExternalLink>
+        <ExternalLink href="https://www.github.com/UmActually/">GitHub</ExternalLink>
     </div>
 </div>
 
 <style>
     h1 {
+        margin: 2rem 0;
         font-variation-settings: "wght" 100, "wdth" 100;
         animation: font-stretch 2s ease-out forwards;
     }
 
     h2 {
         margin: 0;
+    }
+
+    #bio-external-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
     }
 
     #bio-grid {
