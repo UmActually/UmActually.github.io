@@ -108,36 +108,40 @@
     "tldr": "Online Multiplayer Web Game",
     "job": null,
     "date": "June 2024 - Present",
-    "shortDescription": "**Online domino game** using TypeScript & WebSocket as a personal project with my dad.",
+    "shortDescription": "**Online domino game** using Svelte 5 & WebSocket as a personal project with my dad.",
     "detailedDescription": null,
     "bulletPoints": [
-      "Our approach for this game was to use practically no web frameworks, just the **Vite** tool for bundling, and **Node.js** for the WebSocket server.",
+      "Responsive **SvelteKit** application with a **Bun** WebSocket server.",
       "Play the block variant of dominoes with **1-4 players** online. Share a game link with friends or join a public game.",
       "The biggest challenge has been the **computer (bot player) algorithm**, that takes decisions based on many metrics, like the possibility to block opponents from playing.",
-      "The main distinctive factor of our game, compared to other web domino games, is **mobile support** (still in progress), and that players can **place dominoes in any direction** they want."
+      "The main distinctive factor of our game, compared to other web domino games, is **full mobile support**, and that players can **place dominoes in any direction** they want."
     ],
-    "role": "While my dad worked mostly on HTML, I implemented much of the front and back end **logic on TypeScript**. I also designed the logo of the game. Lately, I've been working on mobile support, and Python deployment scripts. In the future, the game will be rewritten in Vue.",
+    "role": "My dad created the initial version of the game, using vanilla JS. I've been in charge of **rewriting the game** in Svelte, fixing bugs, refining the user experience and adding **mobile support** & animations along the way. I implemented gameplay features like the **CPU players** & **spectators**.",
     "technologies": [
-      "Vanilla JS API",
-      "Vite",
-      "Node.js",
-      "Python"
+      "Svelte 5",
+      "Bun.js",
+      "WebSocket",
+      "Vanilla CSS"
     ],
     "skills": [
       "Data Modeling",
+      "Responsive UI Design",
       "Graphic Design"
     ],
     "links": [
       {
         "label": "Play Online",
-        "url": "https://dominoes.mx"
+        "url": "https://v2.dominoes.mx"
       }
     ],
     "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/dominoesmx.png",
     "gallery": [
-      "2025/05/settings.png",
-      "2025/05/chat.png",
-      "2025/05/dominoes.png"
+      "2025/05/gameplay.png",
+      "2025/05/mobile-gameplay.png",
+      "2025/05/chat-1.png",
+      "2025/05/main-menu.png",
+      "2025/05/create-game.png",
+      "2025/05/join-game.png"
     ]
   },
   {
