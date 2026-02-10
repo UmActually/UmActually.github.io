@@ -1,10 +1,10 @@
-export interface ProjectJobDetails {
+interface ProjectJobDetails {
     position: string;
     company: string;
     city: string;
 }
 
-export interface ProjectLink {
+interface ExternalLink {
     label: string;
     url: string;
 }
@@ -21,7 +21,17 @@ export interface Project {
     role: string;
     technologies: string[];
     skills: string[];
-    links: ProjectLink[];
+    links: ExternalLink[];
     iconURL: string | null;
     gallery: string[];
+}
+
+export interface Certification {
+    id: string;
+    name: string;
+    issuer: string;
+    date: string;
+    technologies: string[];
+    skills: string[];
+    links: ExternalLink[];
 }

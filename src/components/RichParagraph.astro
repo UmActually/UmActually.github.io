@@ -1,6 +1,14 @@
 ---
 const raw = await Astro.slots.render("default") || "";
-const html = raw.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+const html = raw
+    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+    // .replace("\n", "<br>");
 ---
 
 <p set:html={html}></p>
+
+<style>
+    p {
+        white-space: pre-wrap;
+    }
+</style>

@@ -10,9 +10,9 @@ if (!project || !project.job) {
 }
 ---
 
-<div
+<a
     class="container bordered clickable margin-top"
-    onclick={`window.location.href = '/projects#${project.id}'`}
+    href={`/projects#${project.id}`}
 >
     <div class="resume-grid">
         <div>
@@ -37,4 +37,12 @@ if (!project || !project.job) {
             ))}
         </ul>
     )}
-</div>
+</a>
+
+<style>
+    a {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+    }
+</style>

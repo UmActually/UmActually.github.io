@@ -5,8 +5,14 @@ import Page from '../layouts/Page.astro';
 import NameHeader from "../components/NameHeader.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import JobProjectCard from "../components/JobProjectCard.astro";
+import ShowMoreButton from "../components/ShowMoreButton.astro";
 
 import allProjects from '../data/projects.json';
+import tecLogo from '../assets/tec-black.png';
+import appleLogo from '../assets/apple-black.svg';
+import swiftLogo from '../assets/swift-black.png';
+import pythonLogo from '../assets/python-black.png';
+import svelteLogo from '../assets/svelte-black.png';
 import type { Project } from "../data/types";
 
 const jobProjects: Project[] = allProjects.filter((p) => p.job);
@@ -18,11 +24,11 @@ const projects: Project[] = allProjects.filter((p) => !p.job);
 
 	<h2 class="container">About Me</h2>
 
-	<p class="container margin-top">
-		Computer engineer graduated from <span class="bold"><img src="../images/tec-black.png" alt="tec de monterrey logo" style="translate: 0 2px;"> Tec de Monterrey</span> in 2025.<br><br>
-		My major interest is development for <span class="bold"><img src="../images/apple-black.svg" alt="apple logo" style="translate: 0 1px;"> Apple platforms</span>.
-		5 years of experience with the <span class="bold">Swift language</span> and front-end development in SwiftUI. Currently learning to take full advantage of frameworks like CoreAnimation, UIKit & Combine.<br><br>
-		I've led small <span class="bold">agile development teams</span> for full-stack web projects. 2 years of experience in technologies like <span class="bold"><img src="../images/python-black.png" alt="python logo" style="translate: 0 2px;"> Django</span> by building production REST services, and <span class="bold">Svelte</span> & <span class="bold">Next.js</span>, for front-end.<br><br>
+	<p class="container about-me margin-top">
+		Computer engineer graduated from <span class="bold"><img src={tecLogo.src} alt="<Tec de Monterrey logo>" style="translate: 0 2px;"> Tec de Monterrey</span> in 2025.<br><br>
+		My major interest is development for <span class="bold"><img src={appleLogo.src} alt="<Apple logo>" style="translate: 0 1px;"> Apple platforms</span>.
+		5 years of experience with the <span class="bold"><img src={swiftLogo.src} alt="<Swift logo>" style="translate: 0 1px;"> Swift language</span> and front-end development in SwiftUI. Currently learning to take full advantage of frameworks like CoreAnimation, UIKit & Combine.<br><br>
+		I've led small <span class="bold">agile development teams</span> for full-stack web projects. 2 years of experience in technologies like <span class="bold"><img src={pythonLogo.src} alt="<Python logo>" style="translate: 0 2px;"> Django</span> by building production REST services, and <span class="bold"><img src={svelteLogo.src} alt="<Svelte logo>" style="translate: 0 2px;"> Svelte</span> & <span class="bold">Next.js</span>, for front-end.<br><br>
 		Solid understanding of topics like software requirements & life cycles, cybersecurity, networks, and operating systems.
 		Self-taught background in music, design and audiovisual editing as well.
 	</p>
@@ -41,7 +47,25 @@ const projects: Project[] = allProjects.filter((p) => !p.job);
 		<p class="small-margin-top monaspace">Click on an item for details, or <a href="/projects" class="local-link">see all projects ›</a></p>
 	</div>
 
-	{projects.map((project) => (
-		<ProjectCard project={project} />
-	))}
+	<div id="projects">
+		{projects.map((project, index) => (
+			<ProjectCard project={project} index={index} />
+		))}
+	</div>
+
+	<ShowMoreButton/>
+
+	<!--<div class="container margin-top">-->
+	<!--	<h2>Licenses & Certifications</h2>-->
+	<!--</div>-->
 </Page>
+
+<style>
+	.about-me {
+		color: var(--fg-secondary);
+	}
+
+	.about-me > .bold {
+		color: var(--fg-primary);
+	}
+</style>

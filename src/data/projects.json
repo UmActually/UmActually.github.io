@@ -4,7 +4,7 @@
     "name": "AKTO",
     "tldr": "Full-Stack Web Freelance",
     "job": {
-      "position": "Software Engineer (Freelance project)",
+      "position": "Software Engineer (Freelance Contract)",
       "company": "Innovaction Gym, Tec de Monterrey",
       "city": "Monterrey, Mexico"
     },
@@ -12,11 +12,11 @@
     "shortDescription": "Led a software development team of three, building a web application for a **COIL platform** connecting **10+ universities**.",
     "detailedDescription": null,
     "bulletPoints": [
-      "**Business & DevOps** - Conducting function point analysis, creating SRS documents, and implementing agile project management methodologies.",
-      "**T3 Stack** - Developing a full-stack application using Next.js and tRPC in TypeScript, hosted on Vercel.",
-      "**Supabase** - Designing and implementing data models and object storage using Supabase and PostgreSQL."
+      "**Business & DevOps** - Conducted function point analysis, created SRS documents, and utilized agile project management methodologies.",
+      "**T3 Stack** - Developed a full-stack application using Next.js and tRPC in TypeScript, hosted on Vercel.",
+      "**Supabase** - Designed and implemented data models and object storage using Supabase and PostgreSQL."
     ],
-    "role": "All three of us were in charge of specific tasks of both front and back end development. I was the **leader of the team**: managed requirements with the client, and time and cost analysis with function points. I also set and configured part of the hosting environment and repositories.",
+    "role": "I was the **leader of the team** and the **product owner**: managed requirements with the client, and performed time and cost analysis with function points. I also set and configured part of the hosting environment and repositories.\n\nAll three of us were in charge of specific tasks of both front and back end development. On the front end, I **designed and implemented** UI & business logic for uploading and viewing educational posts. On the back end, I added integration with Stripe’s payment system and secure **Supabase object storage**.",
     "technologies": [
       "T3 Stack",
       "Next.js",
@@ -35,7 +35,7 @@
     "name": "Agua MTY",
     "tldr": "Back-End Web Freelance",
     "job": {
-      "position": "Back End Developer (Freelance project)",
+      "position": "Back End Developer (Freelance Contract)",
       "company": "RT Conducción Integral",
       "city": "Monterrey, Mexico"
     },
@@ -47,7 +47,7 @@
       "**REST Development** - Built & documented the API schema, conducted end-to-end tests with automated scripts.",
       "**PEP8** - Ensured code quality by adhering to PEP8 standards."
     ],
-    "role": "I was one of the four **back-end developers** of the project. My job was to design and build the REST API, given a prototype of the app. While my colleagues worked on IoT features, I implemented most of the endpoints, and wrote the documentation for the front end team. I also built for end-to-end testing within the Django project.",
+    "role": "I was one of the four **back-end developers** of the project. My job was to design and build the REST API, given a prototype of the app. While my colleagues worked on IoT features, I implemented most of the endpoints, and wrote thorough documentation for the front end team. Designed a **secure role system** for API users, and corresponding authorization policies on endpoints. I also conducted API and database tests within the Django project, using tools like Faker.",
     "technologies": [
       "Django REST Framework",
       "JWT Auth",

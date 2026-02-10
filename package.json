@@ -12,6 +12,6 @@
     "@types/bun": "latest"
   },
   "dependencies": {
-    "astro": "^5.12.7"
+    "astro": "5.17.1"
   }
 }

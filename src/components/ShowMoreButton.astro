@@ -1,0 +1,44 @@
+<button
+    id="load-more-button"
+    class="container bordered clickable margin-top"
+>
+    Show more projects
+</button>
+
+<style>
+    button {
+        width: 100%;
+        background-color: var(--bg-secondary);
+    }
+</style>
+
+<script>
+    const projects = document.getElementById("projects");
+    const button = document.getElementById("load-more-button");
+
+    if (button) {
+        button.onclick = showAllProjects;
+    }
+
+    function showAllProjects() {
+        if (!projects || !button) return;
+        for (const project of projects.children) {
+            (project as HTMLElement).style.display = "grid";
+        }
+        button.innerText = "Show less projects";
+        button.onclick = undoShowAllProjects;
+    }
+
+    function undoShowAllProjects() {
+        if (!projects || !button) return;
+        let index = 0;
+        for (const project of projects.children) {
+            if (index > 3) {
+                (project as HTMLElement).style.display = "none";
+            }
+            index += 1;
+        }
+        button.innerText = "Show more projects";
+        button.onclick = showAllProjects;
+    }
+</script>
