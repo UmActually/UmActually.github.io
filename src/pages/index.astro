@@ -6,8 +6,11 @@ import NameHeader from "../components/NameHeader.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import JobProjectCard from "../components/JobProjectCard.astro";
 import ShowMoreButton from "../components/ShowMoreButton.astro";
+import CertificationCard from "../components/CertificationCard.astro";
 
 import allProjects from '../data/projects.json';
+import { certifications } from "../data/certifications.ts";
+
 import tecLogo from '../assets/tec-black.png';
 import appleLogo from '../assets/apple-black.svg';
 import swiftLogo from '../assets/swift-black.png';
@@ -55,9 +58,15 @@ const projects: Project[] = allProjects.filter((p) => !p.job);
 
 	<ShowMoreButton/>
 
-	<!--<div class="container margin-top">-->
-	<!--	<h2>Licenses & Certifications</h2>-->
-	<!--</div>-->
+	<div class="container margin-top">
+		<h2>Licenses & Certifications</h2>
+	</div>
+
+	<div id="certifications">
+		{certifications.map((cert) => (
+			<CertificationCard cert={cert} />
+		))}
+	</div>
 </Page>
 
 <style>

@@ -1,3 +1,56 @@
 ---
+import ExternalLink from "./ExternalLink.astro";
 import type { Certification } from "../data/types.ts";
+
+const cert: Certification = Astro.props.cert;
+if (!cert) {
+    throw new Error("Certification data is required");
+}
 ---
+
+<div class="container certification-card margin-vertical">
+    <img src={cert.iconURL || "/images/android-chrome-192x192.png"} alt={`${cert.id} icon`} width="80" height="80">
+    <div>
+        <h2>{cert.name}</h2>
+        <p class="monaspace">{cert.issuer}</p>
+        <p class="monaspace light" style="margin-top: 0.5rem;">{cert.date}</p>
+    </div>
+    {cert.links.length > 0 && (
+        <div class="external-links">
+            {cert.links.map((link) => (
+                <ExternalLink href={link.url}>{link.label}</ExternalLink>
+            ))}
+        </div>
+    )}
+</div>
+
+<style>
+    .certification-card {
+        display: grid;
+        grid-template-columns: 80px 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .external-links {
+        align-self: start;
+        text-align: end;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+    }
+
+    @media (max-width: 600px) {
+        .certification-card {
+            grid-template-columns: 80px 1fr;
+        }
+
+        .external-links {
+            grid-column: 1 / -1;
+            align-self: center;
+            text-align: center;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+</style>

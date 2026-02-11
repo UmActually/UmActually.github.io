@@ -34,4 +34,5 @@ export interface Certification {
     technologies: string[];
     skills: string[];
     links: ExternalLink[];
+    iconURL: string | null;
 }
