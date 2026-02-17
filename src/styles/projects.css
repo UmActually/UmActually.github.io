@@ -9,7 +9,7 @@
 
 .clickable:hover {
     transform: scale(1.01);
-    padding: calc(2rem - 1px);
+    padding: calc(2rem - 1px) !important;
     border-color: var(--accent-orange);
     border-width: 2px;
     cursor: pointer;

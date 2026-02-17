@@ -58,7 +58,9 @@ const projects: Project[] = allProjects.filter((p) => !p.job);
 
 	<ShowMoreButton/>
 
-	<div class="container margin-top">
+	<hr>
+
+	<div class="container">
 		<h2>Licenses & Certifications</h2>
 	</div>
 
@@ -67,9 +69,15 @@ const projects: Project[] = allProjects.filter((p) => !p.job);
 			<CertificationCard cert={cert} />
 		))}
 	</div>
+
+	<hr>
 </Page>
 
 <style>
+	hr {
+		margin: 2rem 0;
+	}
+
 	.about-me {
 		color: var(--fg-secondary);
 	}
