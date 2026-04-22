@@ -17,9 +17,9 @@ export default defineConfig({
             status: 301,
             destination: "https://apps.apple.com/us/app/semitones-chromatic-tuner/id6740186119"
         },
-        "/rola-del-clima": {
+        "/desafortunados": {
             status: 301,
-            destination: "https://youtube.com/watch?v=LKXrcDCfV-c"
+            destination: "https://distrokid.com/hyperfollow/leocorona/desafortunados-feat-anbaar"
         }
     }
 });
