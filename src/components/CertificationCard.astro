@@ -11,9 +11,9 @@ if (!cert) {
 <div class="container certification-card margin-vertical">
     <img src={cert.iconURL || "/images/android-chrome-192x192.png"} alt={`${cert.id} icon`} width="80" height="80">
     <div>
-        <h2>{cert.name}</h2>
-        <p class="monaspace">{cert.issuer}</p>
-        <p class="monaspace light" style="margin-top: 0.5rem;">{cert.date}</p>
+        <h3>{cert.name}</h3>
+        <p class="monospaced">{cert.issuer}</p>
+        <p class="monospaced light" style="margin-top: 0.5rem;">{cert.date}</p>
     </div>
     {cert.links.length > 0 && (
         <div class="external-links">

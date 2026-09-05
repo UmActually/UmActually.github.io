@@ -16,11 +16,11 @@ if (!project) {
 
 <div id={project.id} class="project-details container">
     <div class="header-grid margin-vertical">
-        <img src={project.iconURL || "/images/android-chrome-192x192.png"} alt={`${project.id} icon`} width="80" height="80">
+        <img src={project.iconURL || "/images/android-chrome-192x192.png"} alt={`${project.id} icon`} width="92" height="92">
         <div>
             <h2>{project.name}</h2>
-            <p class="monaspace">{project.tldr}</p>
-            <p class="monaspace light" style="margin-top: 0.5rem;">{project.date}</p>
+            <p class="monospaced">{project.tldr}</p>
+            <p class="monospaced light" style="margin-top: 0.5rem;">{project.date}</p>
         </div>
         {project.links.length > 0 && (
             <div class="external-links">
@@ -67,7 +67,7 @@ if (!project) {
     {project.gallery.length > 0 && (
         <div class="title-margin">
             <h3>Gallery</h3>
-            <p class="small-margin-top monaspace">Click on an image to expand.</p>
+            <p class="small-margin-top monospaced">Click on an image to expand.</p>
         </div>
         <ProjectGallery fileNames={project.gallery} />
     )}
@@ -78,8 +78,8 @@ if (!project) {
         scroll-margin-top: 100px;
     }
 
-    .monaspace {
-        font-family: monaspace-neon, sans-serif;
+    .monospaced {
+        font-family: "JetBrains Mono", sans-serif;
     }
 
     .header-grid {

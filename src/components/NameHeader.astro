@@ -5,12 +5,12 @@ import ExternalLink from "./ExternalLink.astro";
 <div class="flex-centered" style="margin: 5rem 0;">
     <h1 id="my-name">Leonardo Corona-Garza</h1>
     <div id="bio-grid">
-        <h2>B.S. in Computer Science</h2><h2 class="accent-blue">@ Tec de Monterrey</h2>
-        <h2>Graduate</h2><h2 class="accent-orange">@ Apple Developer Academy</h2>
+        <h3 class="secondary">B.S. in Computer Science</h3><h3 class="accent-blue">@ Tec de Monterrey</h3>
+        <h3 class="secondary">Graduate</h3><h3 class="accent-orange">@ Apple Developer Academy</h3>
     </div>
     <div id="bio-external-links" style="margin-top: 2rem;">
         <a href="/files/leonardo-resume.pdf" class="local-link">Resume</a>
-        <ExternalLink href="https://www.linkedin.com/in/leonardo-corona-garza-8b4847269/">LinkedIn</ExternalLink>
+        <ExternalLink href="https://www.linkedin.com/in/leo-corona/">LinkedIn</ExternalLink>
         <ExternalLink href="https://www.github.com/UmActually/">GitHub</ExternalLink>
     </div>
 </div>
@@ -18,11 +18,11 @@ import ExternalLink from "./ExternalLink.astro";
 <style>
     h1 {
         margin: 2rem 0;
-        font-variation-settings: "wght" 100, "wdth" 100;
+        font-variation-settings: "wght" 100;
         animation: font-stretch 2s ease-out forwards;
     }
 
-    h2 {
+    h3 {
         margin: 0;
     }
 
@@ -40,21 +40,24 @@ import ExternalLink from "./ExternalLink.astro";
         gap: 1rem;
     }
 
-    #bio-grid h2:nth-child(odd) {
-        font-variation-settings: "wght" 400;
+    #bio-grid h3:nth-child(odd) {
+        font-variation-settings: "wght" 300 !important;
         text-align: right;
     }
 
-    #bio-grid h2:nth-child(even) {
+    #bio-grid h3:nth-child(even) {
+        font-variation-settings: "wght" 900 !important;
         text-align: left;
     }
 
     @keyframes font-stretch {
         from {
-            font-variation-settings: "wght" 100, "wdth" 110;
+            letter-spacing: normal;
+            font-variation-settings: "wght" 100;
         }
         to {
-            font-variation-settings: "wght" 800, "wdth" 125;
+            letter-spacing: 0.1em;
+            font-variation-settings: "wght" 900;
         }
     }
 
@@ -63,7 +66,7 @@ import ExternalLink from "./ExternalLink.astro";
             grid-template-columns: 1fr;
         }
 
-        #bio-grid h2 {
+        #bio-grid h3 {
             text-align: center !important;
         }
     }
@@ -101,7 +104,7 @@ import ExternalLink from "./ExternalLink.astro";
             currentNameText = text;
             nameElement.innerText = currentNameText;
         }
-        unveilAmount += 0.008;
+        unveilAmount += 0.007;
         if (unveilAmount >= 1 || wrongCharacters <= 1) {
             clearInterval(nameUnveil);
             nameElement.innerText = name;

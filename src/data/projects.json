@@ -1,5 +1,42 @@
 [
   {
+    "id": "banregio",
+    "name": "Banregio",
+    "tldr": "Full-Time iOS Developer Role",
+    "job": {
+      "position": "Junior iOS Developer",
+      "company": "Banregio",
+      "city": "Monterrey, Mexico"
+    },
+    "date": "March 2026 - September 2026",
+    "shortDescription": "Developed and maintained the iOS apps for banks **Banregio** and **Hey Banco**, as well as their internal **Swift libraries**.",
+    "detailedDescription": null,
+    "bulletPoints": [
+      "**VIPER Pattern** - Maintained extensive codebases where every app feature corresponds to a VIPER module, enabling complex navigation and data flows. Every module was remotely configurable with feature flags.",
+      "**Scalable Enum Design** - Designed code heavily oriented around Swift's enums, keeping states of the application explicit & future-proof, and avoiding conflict with existing behavior. Used versioned APIs to ensure backward-compatibility.",
+      "**Agile Development** - Executed work in sprints. Ensured consistency of the apps' interfaces across platforms, alongside Android developers and a Product Owner.",
+      "**CI/CD Pipelines** - Generated protected app builds for QA and production using Jenkins and Apple's Transporter."
+    ],
+    "role": "I was a **junior iOS developer** in one of the mobile development teams. I implemented several **usability** and convenience features, mainly related to credit card payment, while maintaining the apps' **backward-compatibility**. I also analyzed and fixed emerging bugs on various app modules, creating users with specific states and examining web requests.\n\nAs a side project, I developed a **CLI tool** in Swift for automating Xcode tasks, such as handling dependencies, building and exporting IPA files, and clearing caches.",
+    "technologies": [
+      "UIKit",
+      "XIB",
+      "Auto Layout",
+      "Modern Concurrency",
+      "SPM & CocoaPods",
+      "Jenkins"
+    ],
+    "skills": [
+      "Agile Development",
+      "GitFlow",
+      "Scalable Design",
+      "Protocol-Oriented Programming"
+    ],
+    "links": [],
+    "iconURL": "https://developeracademy-itservices.com/wp-content/uploads/2025/05/banregio-wink.png",
+    "gallery": []
+  },
+  {
     "id": "akto",
     "name": "AKTO",
     "tldr": "Full-Stack Web Freelance",
@@ -204,7 +241,6 @@
       "PostgreSQL"
     ],
     "skills": [
-      "Agile Development",
       "Web Design",
       "API Design",
       "API Documentation",

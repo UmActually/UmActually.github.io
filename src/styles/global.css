@@ -1,11 +1,3 @@
-@font-face {
-    font-family: monaspace-neon;
-    src: url('/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2') format('woff2'),
-    url('/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff') format('woff');
-    font-weight: 200 800;
-    font-stretch: 100% 125%;
-}
-
 :root {
     --link: #007FEE;
     --border: #a89f94;
@@ -21,7 +13,7 @@
 
 body {
     padding: 0 1rem;
-    font-family: monaspace-neon, sans-serif;
+    font-family: "JetBrains Mono", sans-serif;
     background-color: var(--bg-white);
 }
 
@@ -39,12 +31,14 @@ footer {
 
 h2 {
     margin: 0;
-    font-size: larger;
+    font-size: x-large;
+    font-variation-settings: "wght" 800;
 }
 
 h3 {
     margin: 0;
     font-size: large;
+    font-variation-settings: "wght" 700;
 }
 
 .title-margin {
@@ -86,7 +80,7 @@ hr {
 button {
     color: var(--fg-primary);
     font-size: 1.05em;
-    font-family: monaspace-neon, sans-serif;
+    font-family: "JetBrains Mono", sans-serif;
 }
 
 .bold {
@@ -97,12 +91,11 @@ button {
     font-variation-settings: "wght" 200;
 }
 
-.monaspace {
-    font-family: monaspace-neon, sans-serif;
+.monospaced {
+    font-family: "JetBrains Mono", sans-serif;
 }
 
 .secondary {
-    /*font-size: 0.85rem;*/
     color: var(--fg-secondary);
 }
 

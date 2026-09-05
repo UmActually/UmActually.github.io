@@ -33,7 +33,7 @@
 }
 
 .resume-grid p {
-    font-family: monaspace-neon, sans-serif;
+    font-family: "JetBrains Mono", sans-serif;
 }
 
 @media (max-width: 600px) {
@@ -58,7 +58,7 @@ ul.skills-list {
 }
 
 ul.skills-list li {
-    font-family: monaspace-neon, sans-serif;
+    font-family: "JetBrains Mono", sans-serif;
     font-size: small;
     margin-bottom: 0;
     color: var(--bg-white);

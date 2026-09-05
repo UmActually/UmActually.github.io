@@ -14,8 +14,6 @@ import { certifications } from "../data/certifications.ts";
 import tecLogo from '../assets/tec-black.png';
 import appleLogo from '../assets/apple-black.svg';
 import swiftLogo from '../assets/swift-black.png';
-import pythonLogo from '../assets/python-black.png';
-import svelteLogo from '../assets/svelte-black.png';
 import type { Project } from "../data/types";
 
 const jobProjects: Project[] = allProjects.filter((p) => p.job);
@@ -23,22 +21,28 @@ const projects: Project[] = allProjects.filter((p) => !p.job);
 ---
 
 <Page title="Leonardo Corona-Garza">
-	<NameHeader />
+	<NameHeader/>
 
-	<h2 class="container">About Me</h2>
+	<div class="container">
+		<h2>About Me</h2>
+		<p class="secondary margin-top">
+			Computer engineer graduated from <strong><img src={tecLogo.src} alt="<Tec de Monterrey logo>" style="translate: 0 2px;"> Tec de Monterrey</strong> in 2025.
+			Specialized in application development for <strong><img src={appleLogo.src} alt="<Apple logo>" style="translate: 0 1px;"> Apple platforms</strong> with the <strong><img src={swiftLogo.src} alt="<Swift logo>" style="translate: 0 1px;"> Swift language</strong>.<br><br>
+			<strong>6 months of professional experience</strong> developing and maintaining <strong>large-scale iOS apps</strong> with UIKit, Auto Layout, and the VIPER design pattern. <strong>5 years of project-based experience</strong> with <strong>SwiftUI</strong>, modern concurrency, the MVVM pattern, and frameworks like CoreAnimation, MultipeerConnectivity and Accelerate. Published <strong>two App Store apps</strong> for iOS, iPadOS and tvOS.<br><br>
+			Led small <strong>agile development teams</strong> for full-stack web freelance projects. Solid understanding of operating systems, networks, web cybersecurity and software cost analysis.
+			Self-taught background in music, design and audiovisual editing as well.
+		</p>
+	</div>
 
-	<p class="container about-me margin-top">
-		Computer engineer graduated from <span class="bold"><img src={tecLogo.src} alt="<Tec de Monterrey logo>" style="translate: 0 2px;"> Tec de Monterrey</span> in 2025.<br><br>
-		My major interest is development for <span class="bold"><img src={appleLogo.src} alt="<Apple logo>" style="translate: 0 1px;"> Apple platforms</span>.
-		5 years of experience with the <span class="bold"><img src={swiftLogo.src} alt="<Swift logo>" style="translate: 0 1px;"> Swift language</span> and front-end development in SwiftUI. Currently learning to take full advantage of frameworks like CoreAnimation, UIKit & Combine.<br><br>
-		I've led small <span class="bold">agile development teams</span> for full-stack web projects. 2 years of experience in technologies like <span class="bold"><img src={pythonLogo.src} alt="<Python logo>" style="translate: 0 2px;"> Django</span> by building production REST services, and <span class="bold"><img src={svelteLogo.src} alt="<Svelte logo>" style="translate: 0 2px;"> Svelte</span> & <span class="bold">Next.js</span>, for front-end.<br><br>
-		Solid understanding of topics like software requirements & life cycles, cybersecurity, networks, and operating systems.
-		Self-taught background in music, design and audiovisual editing as well.
+	<hr>
+	<p class="container secondary margin-top">
+		Below is a summary of my recent projects and roles. Or see all &nbsp;<span class="monospaced"><strong><a href="/projects" class="local-link">in detail ›</a></strong></span>
 	</p>
+	<hr>
 
 	<div class="container margin-top">
 		<h2>Work Experience</h2>
-		<p class="small-margin-top monaspace">Click on an item for details, or <a href="/projects" class="local-link">see all projects ›</a></p>
+		<p class="secondary margin-top">Click on an item for details.<br>Experience gained is listed as <span class="skills-list tech">Technologies</span> and <span class="skills-list">Skills</span>.</p>
 	</div>
 
 	{jobProjects.map((project) => (
@@ -46,8 +50,8 @@ const projects: Project[] = allProjects.filter((p) => !p.job);
 	))}
 
 	<div class="container margin-top">
-		<h2>Projects</h2>
-		<p class="small-margin-top monaspace">Click on an item for details, or <a href="/projects" class="local-link">see all projects ›</a></p>
+		<h2>Recent Projects</h2>
+		<p class="secondary margin-top">Click on an item for details.<br>Experience gained is listed as <span class="skills-list tech">Technologies</span> and <span class="skills-list">Skills</span>.</p>
 	</div>
 
 	<div id="projects">
@@ -78,11 +82,24 @@ const projects: Project[] = allProjects.filter((p) => !p.job);
 		margin: 2rem 0;
 	}
 
-	.about-me {
-		color: var(--fg-secondary);
+	.small {
+		font-size: small;
 	}
 
-	.about-me > .bold {
+	.secondary strong {
 		color: var(--fg-primary);
 	}
+
+	span.skills-list {
+		font-family: "JetBrains Mono", sans-serif !important;
+		font-size: small;
+		color: var(--bg-white);
+		padding: 0.25rem 0.5rem;
+		background-color: var(--accent-orange);
+	}
+
+	span.skills-list.tech {
+		background-color: var(--accent-blue);
+	}
+
 </style>

@@ -7,7 +7,7 @@ export default defineConfig({
     redirects: {
         "/linkedin": {
             status: 301,
-            destination: "https://www.linkedin.com/in/leonardo-corona-garza-8b4847269/"
+            destination: "https://www.linkedin.com/in/leo-corona/"
         },
         "/ajedrez": {
             status: 301,
