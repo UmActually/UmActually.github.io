@@ -145,7 +145,7 @@
     "tldr": "Online Multiplayer Web Game",
     "job": null,
     "date": "June 2024 - Present",
-    "shortDescription": "**Online domino game** using Svelte 5 & WebSocket as a personal project with my dad.",
+    "shortDescription": "Online domino game with more than **1400 active users**, made with Svelte 5 & WebSocket as a personal project with my dad.",
     "detailedDescription": null,
     "bulletPoints": [
       "Responsive **SvelteKit** application with a **Bun** WebSocket server.",
