@@ -1,0 +1,551 @@
+[
+    {
+        "spanish": "papa",
+        "english": "potato chip",
+        "vibeEnglish": [
+            {
+                "translation": "pape",
+                "derivedBy": ["chop"]
+            }
+        ],
+        "isLegendary": true,
+        "examples": ["'Voy a tirar estas papes' started it all."]
+    },
+    {
+        "spanish": "bote de basura",
+        "english": "trash can",
+        "vibeEnglish": [
+            {
+                "translation": "basure boat",
+                "derivedBy": ["chop:basure bot", "vowel"]
+            }
+        ],
+        "isLegendary": true
+    },
+    {
+        "spanish": "tenedor",
+        "english": "fork",
+        "vibeEnglish": [
+            {
+                "translation": "haver",
+                "derivedBy": ["derivation:tener-dor", "literal"]
+            }
+        ],
+        "isLegendary": true
+    },
+    {
+        "spanish": "recogedor",
+        "english": "dustpan",
+        "vibeEnglish": [
+            {
+                "translation": "refucker",
+                "derivedBy": ["derivation:re-coger-dor", "literal"],
+                "author": "Fel"
+            }
+        ],
+        "isLegendary": true
+    },
+    {
+        "spanish": "taco",
+        "english": "taco",
+        "vibeEnglish": [
+            {
+                "translation": "take",
+                "derivedBy": ["chop:tack", "vowel"]
+            },
+            {
+                "translation": "tac",
+                "derivedBy": ["chop"],
+                "author": "Abel"
+            }
+        ],
+        "isLegendary": true
+    },
+    {
+        "spanish": "huevo",
+        "english": "egg",
+        "vibeEnglish": [
+            {
+                "translation": "boweb",
+                "derivedBy": ["misspell:boebo", "chop:boeb", "phonotactic"],
+                "author": "Metra"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "chingón",
+        "english": "cool",
+        "vibeEnglish": [
+            {
+                "translation": "chinegon",
+                "derivedBy": ["vowel"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "hacer",
+        "english": "do",
+        "vibeEnglish": [
+            {
+                "translation": "ace",
+                "derivedBy": ["chop"]
+            }
+        ],
+        "isLegendary": false,
+        "examples": ["What are you acing?"]
+    },
+    {
+        "spanish": "chistoso",
+        "english": "funny",
+        "vibeEnglish": [
+            {
+                "translation": "chisetose",
+                "derivedBy": ["chop:chistose", "vowel"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "nieve",
+        "english": "ice cream",
+        "vibeEnglish": [
+            {
+                "translation": "naïve",
+                "derivedBy": ["existing"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "pozole",
+        "english": "pozole",
+        "vibeEnglish": [
+            {
+                "translation": "podsol",
+                "derivedBy": ["existing"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "trapeador",
+        "english": "mop",
+        "vibeEnglish": [
+            {
+                "translation": "trapper",
+                "derivedBy": ["derivation:trapear-dor", "vowel"]
+            },
+            {
+                "translation": "6ix9ine",
+                "derivedBy": ["derivation:trapear-dor", "vowel:trapper", "domain"],
+                "author": "Fel"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "escoba",
+        "english": "sweeper",
+        "vibeEnglish": [
+            {
+                "translation": "scobe",
+                "derivedBy": ["phonotactic:scoba", "chop"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "carne",
+        "english": "meat",
+        "vibeEnglish": [
+            {
+                "translation": "carn",
+                "derivedBy": ["chop"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "marcar (por teléfono)",
+        "english": "call",
+        "vibeEnglish": [
+            {
+                "translation": "mark",
+                "derivedBy": ["literal"]
+            }
+        ],
+        "isLegendary": false,
+        "examples": ["I'mma mark you later today."]
+    },
+    {
+        "spanish": "tardar",
+        "english": "take long",
+        "vibeEnglish": [
+            {
+                "translation": "tard",
+                "derivedBy": ["chop"]
+            }
+        ],
+        "isLegendary": false,
+        "examples": ["Don't tard yourself.", "I won't tard myself."]
+    },
+    {
+        "spanish": "paraguas",
+        "english": "umbrella",
+        "vibeEnglish": [
+            {
+                "translation": "water stopper",
+                "derivedBy": ["derivation:parar-agua", "literal"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "aguas (expresión)",
+        "english": "look out",
+        "vibeEnglish": [
+            {
+                "translation": "waters",
+                "derivedBy": ["literal"]
+            }
+        ],
+        "isLegendary": true
+    },
+    {
+        "spanish": "bueno",
+        "english": "good",
+        "vibeEnglish": [
+            {
+                "translation": "bowen",
+                "derivedBy": ["misspell:boeno", "chop:boen", "phonotactic"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "gota",
+        "english": "droplet",
+        "vibeEnglish": [
+            {
+                "translation": "goat",
+                "derivedBy": ["chop", "existing"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "sucio",
+        "english": "dirty",
+        "vibeEnglish": [
+            {
+                "translation": "sussy",
+                "derivedBy": ["existing"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "chile",
+        "english": "chili pepper",
+        "vibeEnglish": [
+            {
+                "translation": "chill",
+                "derivedBy": ["existing"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "bocina",
+        "english": "speaker",
+        "vibeEnglish": [
+            {
+                "translation": "bosin",
+                "derivedBy": ["chop"]
+            },
+            {
+                "translation": "bosine",
+                "derivedBy": ["chop:bosin", "vowel"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "cartera",
+        "english": "wallet",
+        "vibeEnglish": [
+            {
+                "translation": "carter",
+                "derivedBy": ["chop"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "cebolla",
+        "english": "onion",
+        "vibeEnglish": [
+            {
+                "translation": "chypole",
+                "derivedBy": ["italian:cipolla", "chop:chipole", "vowel"],
+                "author": "Llaguno"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "sartén",
+        "english": "frying pan",
+        "vibeEnglish": [
+            {
+                "translation": "sart'n",
+                "derivedBy": ["american"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "Comidas Pronto",
+        "english": "Comidas Pronto",
+        "vibeEnglish": [
+            {
+                "translation": "Soon Foods",
+                "derivedBy": ["literal"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "piso",
+        "english": "floor",
+        "vibeEnglish": [
+            {
+                "translation": "piss",
+                "derivedBy": ["chop:pise", "vowel", "existing"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "cheve",
+        "english": "beer",
+        "vibeEnglish": [
+            {
+                "translation": "cheve (silent E)",
+                "derivedBy": ["chop"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "traer",
+        "english": "bring",
+        "vibeEnglish": [
+            {
+                "translation": "tray",
+                "derivedBy": ["chop", "existing"]
+            }
+        ],
+        "isLegendary": false,
+        "examples": ["Can you tray some carn from the supermarket?"]
+    },
+    {
+        "spanish": "llave",
+        "english": "key",
+        "vibeEnglish": [
+            {
+                "translation": "jave (silent E)",
+                "derivedBy": ["phonotactic"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "café",
+        "english": "coffee",
+        "vibeEnglish": [
+            {
+                "translation": "brown",
+                "derivedBy": ["literal"]
+            }
+        ],
+        "isLegendary": true
+    },
+    {
+        "spanish": "triste",
+        "english": "sad",
+        "vibeEnglish": [
+            {
+                "translation": "triste (silent E)",
+                "derivedBy": ["chop"],
+                "author": "Panaconejos"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "Vibe English",
+        "english": "Vibe English",
+        "vibeEnglish": [
+            {
+                "translation": "Little English",
+                "derivedBy": ["reference to little duck"],
+                "author": "Fel"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "carne asada",
+        "english": "barbecue",
+        "vibeEnglish": [
+            {
+                "translation": "ased carn",
+                "derivedBy": ["chop"]
+            }
+        ],
+        "isLegendary": true
+    },
+    {
+        "spanish": "chamba",
+        "english": "job",
+        "vibeEnglish": [
+            {
+                "translation": "chamb",
+                "derivedBy": ["chop"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "vecina",
+        "english": "neighbor lady",
+        "vibeEnglish": [
+            {
+                "translation": "vessin",
+                "derivedBy": ["chop"],
+                "author": "Llaguno"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "ropa",
+        "english": "clothes",
+        "vibeEnglish": [
+            {
+                "translation": "rope",
+                "derivedBy": ["chop", "existing"],
+                "author": "Mike"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "herramienta",
+        "english": "tool",
+        "vibeEnglish": [
+            {
+                "translation": "ironment",
+                "derivedBy": ["derivation:fierro-miento"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "cuchara",
+        "english": "spoon",
+        "vibeEnglish": [
+            {
+                "translation": "copper chair",
+                "derivedBy": ["chop:cuchaire", "respell:Cu-chair", "periodic table"],
+                "author": "Mike"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "cilantro",
+        "english": "coriander",
+        "vibeEnglish": [
+            {
+                "translation": "cylanter",
+                "derivedBy": ["chop:cilantre", "american:cilanter", "vowel"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "coca",
+        "english": "coke",
+        "vibeEnglish": [
+            {
+                "translation": "cock",
+                "derivedBy": ["chop", "existing"],
+                "author": "Llaguno"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "jodido",
+        "english": "wasted",
+        "vibeEnglish": [
+            {
+                "translation": "joded",
+                "derivedBy": ["derivation:joder", "chop:jode", "derivation"],
+                "author": "Cristi"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "sombrilla",
+        "english": "umbrella",
+        "vibeEnglish": [
+            {
+                "translation": "little shadow",
+                "derivedBy": ["derivation:sombra-illa", "literal"],
+                "author": "Clarisa"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "sacapuntas",
+        "english": "pencil sharpener",
+        "vibeEnglish": [
+            {
+                "translation": "point extractor",
+                "derivedBy": ["derivation:sacar-punta", "literal"],
+                "author": "Clarisa"
+            }
+        ],
+        "isLegendary": true
+    },
+    {
+        "spanish": "coche",
+        "english": "car",
+        "vibeEnglish": [
+            {
+                "translation": "coach",
+                "derivedBy": ["chop", "existing"],
+                "author": "Clarisa"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "audífonos",
+        "english": "headphones",
+        "vibeEnglish": [
+            {
+                "translation": "audiphones",
+                "derivedBy": ["derivation:audi-fono", "literal"]
+            }
+        ],
+        "isLegendary": false
+    }
+]

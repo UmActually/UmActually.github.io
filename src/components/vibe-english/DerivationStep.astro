@@ -1,0 +1,31 @@
+---
+import "../../styles/global.css";
+import "../../styles/vibe-english.css";
+import type { DerivationStep } from "../../data/vibe-english/types";
+
+const rawStep: DerivationStep | string = Astro.props.step;
+const fallback: string = Astro.props.fallback;
+if (!rawStep) {
+    throw new Error("Step is required.");
+}
+
+const splitStep = rawStep.split(":");
+const step = splitStep[0] as DerivationStep;
+const resultingWord = splitStep[1] ?? fallback;
+
+const backgroundColor = ["chop", "literal", "vowel"].includes(step)
+    ? `var(--step-${step})`
+    : "black";
+---
+
+<>
+    <li class="step" style={{ backgroundColor }}>
+        {step.toUpperCase()}
+    </li>
+    {resultingWord && (
+        <>
+            <li>›</li>
+            <li class="italic">{resultingWord}</li>
+        </>
+    )}
+</>

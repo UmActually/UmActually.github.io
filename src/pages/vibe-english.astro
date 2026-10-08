@@ -1,0 +1,196 @@
+---
+import "../styles/global.css";
+import "../styles/vibe-english.css";
+import Page from "../layouts/Page.astro";
+import WordCard from "../components/vibe-english/WordCard.astro";
+import dictionary from "../data/vibe-english/dictionary.json";
+import type { Word } from "../data/vibe-english/types";
+
+dictionary.sort((a, b) =>
+    a.spanish.toLowerCase() < b.spanish.toLowerCase() ? -1 : 1,
+);
+---
+
+<Page title="Vibe English - Diccionario para Hispanohablantes" language="es">
+    <div class="flex-centered margin-top">
+        <h1>Vibe English</h1>
+        <h3>Diccionario para Hispanohablantes</h3>
+    </div>
+
+    <div class="container margin-top">
+        <h2 id="intro">Introducción</h2>
+        <p class="secondary margin-top">
+            Al menos una vez en tu vida has intentado traducir una palabra al
+            inglés usando solo la <strong>intuición</strong>. Quizás fue un
+            intento genuino, no sabías cómo se dice "ocupado" en inglés y
+            dijiste "occupated" en vez de "occupied". Pero muy probablemente
+            estás aquí porque ya sabes inglés y has hecho estas falsas
+            traducciones de puro mame. En ese caso, empecé igual que tú, y fui
+            descendiendo lentamente a la locura. Hoy, palabras del{" "}
+            <strong>Vibe English</strong> forman parte de mi español del día a
+            día, y mis amigos están igualmente entrenados para decodificarlo.
+            Estamos tan, pero tan habituados, que una frase como "Trump takes"
+            tiene mucha más conexión semántica con los{" "}
+            <strong>tacos de trompo</strong> que con la política estadounidense.
+        </p>
+    </div>
+
+    <hr />
+    <p class="container secondary margin-top">
+        Chingón, pero quiero ver el &nbsp;
+        <span class="monospaced">
+            <strong>
+                <a href="/vibe-english#dictionary" class="local-link">
+                    diccionario ›
+                </a>
+            </strong>
+        </span>
+    </p>
+    <hr />
+
+    <div class="container margin-top">
+        <h2 id="background">Trasfondo Lingüístico</h2>
+        <p class="secondary margin-top">
+            Si crees que hay un <strong>patrón</strong> para estas traducciones
+            chistosas, estás en lo correcto. Una palabra de Vibe English nace a
+            partir de su equivalente en español, y se transforma de cierta
+            manera para llegar al resultado. A mi parecer, estas son las algunas
+            posibles <strong>transformaciones</strong> que dan lugar a una
+            palabra mal traducida chistosa. Toma en cuenta que puede darse una
+            serie de varias transformaciones.
+        </p>
+        <ul class="steps margin-top">
+            <li>
+                <span
+                    class="step"
+                    style="background-color: var(--step-literal);"
+                >
+                    LITERAL
+                </span>
+            </li>
+            <li>
+                Una traducción literal de una palabra o frase que normalmente
+                solo tiene sentido en español, o español mexicano.
+            </li>
+            <li>
+                <span class="step" style="background-color: var(--step-vowel);">
+                    VOWEL
+                </span>
+            </li>
+            <li>
+                Un cambio intencional de la escritura de una palabra para hacer
+                que una o varias de sus vocales se pronuncien diferente.
+            </li>
+            <li>
+                <span class="step" style="background-color: var(--step-chop);">
+                    CHOP
+                </span>
+            </li>
+            <li>
+                A VER, sabemos que hay muchas palabras en inglés que se comen la
+                última sílaba de la equivalente en español. Hay casos muy
+                descarados, como "carro/car", "persona/person". También hay
+                casos donde aplica gracias a la famosa E muda, como
+                "Europa/Europe". Obviamente estos pares de palabras comparten
+                raíces etimológicas. Pero la razón de este recorte de sílabas es
+                más que nada la morfología (estructura de palabras) del español.
+                Muchas veces las terminaciones de nuestras palabras llevan
+                consigo un significado: sea género gramatical, conjugación, etc.
+                El inglés no suele tener tanta complejidad y puede prescindir de
+                esas últimas letras. "Se perdieron los valores" type shit.
+            </li>
+            <li>
+                <span class="step">EXISTING</span>
+            </li>
+            <li>
+                Una adaptación de una palabra para hacerla igual a una palabra
+                existente (quizás chistosa) del inglés.
+            </li>
+            <li>
+                <span class="step">DERIVATION</span>
+            </li>
+            <li>
+                Separar o juntar los componentes morfológicos de una palabra.
+                "Computadora" se puede descomponer en "computar" y "-dor/-dora".
+                Ambos pedazos tienen su equivalente en inglés y al traducirse
+                resultan en "computer".
+            </li>
+            <li>
+                <span class="step">PHONOTACTIC</span>
+            </li>
+            <li>
+                Una adaptación de la escritura de una palabra para cumplir con
+                las reglas de fonotáctica (cómo se pueden combinar sonidos) del
+                inglés. O bien, dejar de cumplir con las reglas de fonotáctica
+                del español. Esto último sucede, por ejemplo, cuando le quitamos
+                la E inicial a las palabras con S impura, como "estable/stable",
+                "escena/scene", "escala/scale".
+            </li>
+            <li>
+                <span class="step">DOMAIN</span>
+            </li>
+            <li>
+                Un cambio de una palabra a otra que no tiene nada que ver en
+                cuanto a sonido o estructura, pero sí va con la temática o
+                dominio (campo semántico). Esto famosamente lo hizo Fel al
+                decirle "6ix9ine" al trapeador.
+            </li>
+            <li>
+                <span class="step">MISSPELL</span>
+            </li>
+            <li>Escribir la palabra en español mal a propósito.</li>
+        </ul>
+    </div>
+
+    <div class="container margin-top">
+        <h2 id="dictionary">Diccionario</h2>
+        <p class="secondary margin-top">
+            Cada palabra del español/inglés puede tener más de una traducción en
+            Vibe English. Cada traducción explica cómo se deduce, según las
+            transformaciones explicadas anteriormente. Hay algunas palabras que
+            vibraron tan alto que las he marcado como "LEGENDARY".
+        </p>
+    </div>
+
+    {dictionary.map((word: Word) => (
+        <WordCard {word} />
+    ))}
+</Page>
+
+<style>
+    hr {
+        margin: 2rem 0;
+    }
+
+    ul.steps {
+        list-style-type: none;
+        padding: 0;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 100px 1fr;
+        gap: 1rem;
+    }
+
+    ul.steps li {
+        margin: 0;
+    }
+
+    span.step {
+        font-family: "JetBrains Mono", sans-serif !important;
+        font-size: small;
+        color: var(--bg-white);
+        background-color: black;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .secondary strong {
+        color: var(--fg-primary);
+    }
+
+    @media (max-width: 600px) {
+        ul.steps {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

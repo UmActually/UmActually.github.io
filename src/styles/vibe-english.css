@@ -1,0 +1,59 @@
+:root {
+    --legendary: #C1953C;
+    --step-chop: #3C4FCE;
+    --step-literal: #F06449;
+    --step-vowel: #4D9480;
+}
+
+ul.derived-by {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.125rem;
+}
+
+ul.derived-by li {
+    font-size: small;
+    margin-bottom: 0;
+    padding: 0.25rem 0.5rem;
+}
+
+ul.derived-by li.step {
+    font-family: "JetBrains Mono", sans-serif;
+    color: var(--bg-white);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.word-header-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.word-header-grid div {
+    gap: 1rem;
+}
+
+.word-header-grid div:nth-child(odd) {
+    text-align: left;
+}
+
+.word-header-grid div:nth-child(even) {
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .word-header-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        place-items: start;
+    }
+
+    .word-header-grid div {
+        text-align: left !important;
+    }
+}

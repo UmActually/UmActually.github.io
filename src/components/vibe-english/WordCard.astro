@@ -1,0 +1,115 @@
+---
+import "../../styles/global.css";
+import "../../styles/vibe-english.css";
+import DerivationStep from "./DerivationStep.astro";
+import type { Word } from "../../data/vibe-english/types";
+
+const word: Word = Astro.props.word;
+if (!word) {
+    throw new Error("Word is required.");
+}
+
+const authors = word.vibeEnglish.flatMap((vibeEnglishWord) =>
+    vibeEnglishWord.author ? [vibeEnglishWord.author] : [],
+);
+---
+
+<div
+    class="container bordered margin-top"
+    class:list={[{ legendary: word.isLegendary }]}
+>
+    <div class="word-header-grid">
+        <div class="flex">
+            <h3>{word.spanish}</h3>
+            <p>{word.english}</p>
+        </div>
+        {(word.isLegendary || !!authors.length) && (
+            <div>
+                {word.isLegendary && <p class="legendary">LEGENDARY</p>}
+                {!!authors.length && <p>Credits to {authors.join(", ")}</p>}
+            </div>
+        )}
+    </div>
+    {word.vibeEnglish.map((vibeEnglishWord) => (
+        <div class="vibe-english-word">
+            <p class="italic">{vibeEnglishWord.translation}</p>
+            <ul class="derived-by">
+                <DerivationStep
+                    step={vibeEnglishWord.derivedBy[0]}
+                    fallback={
+                        vibeEnglishWord.derivedBy.length > 1
+                            ? vibeEnglishWord.translation
+                            : undefined
+                    }
+                />
+                {vibeEnglishWord.derivedBy.slice(1).map((step) => (
+                    <>
+                        <li>›</li>
+                        <DerivationStep
+                            {step}
+                            fallback={vibeEnglishWord.translation}
+                        />
+                    </>
+                ))}
+            </ul>
+        </div>
+    ))}
+    {!!word.examples?.length && (
+        <div style="margin-top: 1.75rem">
+            {word.examples.map((example) => (
+                <p class="secondary small-margin-top italic">{example}</p>
+            ))}
+        </div>
+    )}
+</div>
+
+<style>
+    .padded {
+        padding: 2rem;
+    }
+
+    .flex {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .flex > h3,
+    .flex > p {
+        margin: 0;
+    }
+
+    div.legendary {
+        border-color: var(--legendary);
+    }
+
+    p.legendary {
+        font-family: "JetBrains Mono", sans-serif;
+        color: var(--legendary);
+        font-variation-settings: "wght" 600;
+    }
+
+    .vibe-english-word {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 200px 1fr;
+        place-items: start;
+        margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+        .vibe-english-word {
+            grid-template-rows: auto auto;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+    }
+</style>
