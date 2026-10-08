@@ -547,5 +547,27 @@
             }
         ],
         "isLegendary": false
+    },
+    {
+        "spanish": "gracias",
+        "english": "thank you",
+        "vibeEnglish": [
+            {
+                "translation": "graces",
+                "derivedBy": ["literal"]
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "de nada",
+        "english": "you're welcome",
+        "vibeEnglish": [
+            {
+                "translation": "of nothing",
+                "derivedBy": ["literal"]
+            }
+        ],
+        "isLegendary": false
     }
 ]
