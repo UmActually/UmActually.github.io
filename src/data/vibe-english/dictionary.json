@@ -569,5 +569,61 @@
             }
         ],
         "isLegendary": false
+    },
+    {
+        "spanish": "fuga (expresión)",
+        "english": "let's head out",
+        "vibeEnglish": [
+            {
+                "translation": "foog",
+                "derivedBy": ["chop"]
+            },
+            {
+                "translation": "leak",
+                "derivedBy": ["literal"]
+            },
+            {
+                "translation": "amons",
+                "derivedBy": ["synonym:vámonos", "misspell:'ámonos", "chop"],
+                "author": "Fel"
+            }
+        ],
+        "isLegendary": false
+    },
+    {
+        "spanish": "hambre",
+        "english": "hunger",
+        "vibeEnglish": [
+            {
+                "translation": "amber",
+                "derivedBy": ["chop"]
+            }
+        ],
+        "isLegendary": false,
+        "examples": ["Ace amber.", "Amber is acing."]
+    },
+    {
+        "spanish": "frío",
+        "english": "cold",
+        "vibeEnglish": [
+            {
+                "translation": "fry",
+                "derivedBy": ["chop:free", "vocal"]
+            }
+        ],
+        "isLegendary": false,
+        "examples": ["Ace fry."]
+    },
+    {
+        "spanish": "calor",
+        "english": "heat",
+        "vibeEnglish": [
+            {
+                "translation": "kaylor",
+                "derivedBy": ["vocal"]
+            }
+        ],
+        "isLegendary": false,
+        "examples": ["Ace kaylor."]
     }
 ]
